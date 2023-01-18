@@ -15,6 +15,12 @@
     --slightly-transparent-white: hsla(0, 0%, 100%, 0.6);
 }
 
+html {
+    background-color: var(--very-dark-blue);
+    font-family: 'Inter', sans-serif;
+
+}
+
 .container-card {
     height: 100vh;
     width: 100vw;
@@ -29,23 +35,49 @@
     height: auto;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    background-color: var(--dark-desaturated-blue);
 }
 
-.card-content {
+.card-content { 
+    width: 570px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background-color: var(--dark-desaturated-blue);
+    color: var(--white);   
+}
+
+.meh {
+    width: 80%;
+    padding-left: 50px;
 }
 
 h1 {
     font-size: 1.875rem;
+    margin-top: 60px;
 }
 
-p {
-    width: 80%;
+.card-description {
+    margin-top: 40px;
+    font-size: 15px;
+}
+
+.card-letmethink {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    margin-top: 80px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+span {
+    font-size: 12px;
+}
+
+img {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 .attribution {
